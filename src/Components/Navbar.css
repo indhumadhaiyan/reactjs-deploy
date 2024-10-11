@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* #photo {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+} */
+
+#para {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#par {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+ul Link a li:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+ul li:hover {
+  color: #25A18E; 
+  cursor: pointer;
+}
+.link-service {
+  position: relative;
+  display: inline-block;
+}
+
+.link-service::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #4476e0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-service:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+#bg {
+    background: rgba(13, 15, 17, 0.2);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+  color: #4476e0;
+  cursor: pointer;
+}
+
+#basic-menu{
+  top: 20px !important;
+    left: 0px !important;
+    font-family: "Lato", sans-serif !important;
+}

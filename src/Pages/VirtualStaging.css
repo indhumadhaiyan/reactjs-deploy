@@ -1,0 +1,84 @@
+.vs-sec {
+    background-color: rgb(160, 160, 224);
+  }
+  
+  .vs-main {
+    display: flex;
+    padding: 7rem 2rem;
+ /* Allows better flexibility for smaller screens */
+  }
+  
+  .vs-main .vs-sub-txt {
+    padding: 2rem 4rem;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .vs-main {
+      flex-direction: column;
+      padding: 6rem 1.5rem;
+    }
+
+    .vs-sec{
+        padding: 6rem 2rem;
+    }
+  
+    .vs-main .vs-sub-txt {
+      padding: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .vs-main {
+      padding: 2rem 1rem;
+    }
+  
+    .vs-main .vs-sub-txt {
+      padding: 1.5rem 1rem;
+    }
+  
+    .vs-main .vs-sub-img {
+      max-width: 100%; /* Ensure the image fits within the container */
+    }
+  
+    .main-content-vs, .sub-content-vs {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .vs-main .vs-sub-img {
+      display: none; /* Hides the image on smaller screens */
+    }
+  
+    .vs-main .vs-sub-txt {
+      background: rgba(0, 0, 0, 0.3);
+      outline: 1px solid white;
+      border-radius: 20px;
+      padding: 1rem 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .main-content-vs {
+      color: black;
+      display: flex;
+      flex-direction: column;
+      width: 100%; /* Make sure the container takes full width */
+    }
+  
+    .sub-content-vs {
+      width: 100%; /* Ensure full width for smaller screens */
+    }
+  
+    .pix-vs {
+      color: black;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .end-main {
+      display: flex;
+      flex-direction: column;
+      color: #000;
+      padding: 1rem 0; /* Adjust padding */
+    }
+  }
+  

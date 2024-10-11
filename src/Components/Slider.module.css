@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:white;
+}
+
+iframe {
+  aspect-ratio: 10/9;
+}
+
+
+.main {
+  display: flex;
+  place-items: center;
+  min-height: 65vh;
+  padding: 50px;
+  padding-left: 370px;
+  padding-right:370px;
+  padding-top: 50px;
+}
+
+.container {
+
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  --position: 150%;
+}
+
+.imageContainer {
+  max-width: 1000px;
+  max-height: 100vh;
+  aspect-ratio: 2.7/2;
+  display: flex;
+}
+
+.sliderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.imageBefore {
+  position: absolute;
+  inset: 0;
+  width: var(--position);
+
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider:focus-visible ~ .sliderButton {
+  outline: 5px solid black;
+  outline-offset: 3px;
+}
+
+.sliderLine {
+  position: absolute;
+  inset: 0;
+  width: 0.2rem;
+  height: 100%;
+  background-color: #fff;
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.sliderButton {
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  box-shadow: 1px 1px 1px hsl(0, 50%, 2%, 0.5);
+}
+.bg-img{
+  width: 1000px;
+}
+@media only screen and (max-width: 1200px){
+  .main {
+    padding: 50px;
+  }
+  .head-text{
+    padding-left: 0;
+  }
+}

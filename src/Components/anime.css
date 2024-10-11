@@ -1,0 +1,16 @@
+.function-based-values-demo {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .el {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6b6b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
