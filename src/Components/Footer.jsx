@@ -31,11 +31,11 @@ export default function Footer() {
                    Home
                   {/* <a>Home</a> */}
                 </Link><br />
-                <Link to={"/about"} className="link-services ">
+                <Link to={"/about"} className="link-services " onClick={handleLinkClick}>
                 About Us
                   {/* <a>About Us</a> */}
                 </Link><br />
-                <Link to={"/services"} className="link-services ">
+                <Link to={"/virtual-dusk"} className="link-services ">
                 Services
                   {/* <a>Services</a> */}
                 </Link><br />

@@ -21,12 +21,12 @@ const ImageSlider = () => {
           <div className={styles.imageContainer}>
             <img
               className={`${styles.imageBefore} ${styles.sliderImage}`}
-              src="https://ftedesign.com/wp-content/uploads/2023/04/217359807_353084599740989_7515132072648962576_n.jpg"
+              src="https://assets.theclose.com/uploads/2022/04/Virtual-Staging-from-roOmy.jpg"
               alt="black and white"
             />
             <img
               className={`${styles.imageAfter} ${styles.sliderImage}`}
-              src="https://ftedesign.com/wp-content/uploads/2023/04/214759684_353084886407627_238863848921388688_n.jpg"
+              src="https://www.lcpmedia.com/hs-fs/hubfs/Real%20vs.%20Staged%20(5).png?width=2000&name=Real%20vs.%20Staged%20(5).png"
               alt="color photo"
             />
           </div>

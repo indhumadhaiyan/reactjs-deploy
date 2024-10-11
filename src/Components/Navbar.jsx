@@ -30,7 +30,7 @@ const ResponsiveNavbar = () => {
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
+  
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -160,7 +160,7 @@ const ResponsiveNavbar = () => {
                   </button>
                 </li>
               <li id="par" style={{ fontSize: "17px" }} className="link-service">
-                <Link style={{ textDecoration: "none",color: "white" }} to="/about">
+                <Link style={{ textDecoration: "none",color: "white" }} to="/about" onClick={handleLinkClick}>
                   About Us
                 </Link>
               </li>
